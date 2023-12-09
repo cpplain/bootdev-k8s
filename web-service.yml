@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: synergychat-web
+spec:
+  selector:
+    app: synergychat-web
+  ports:
+    - name: synergychat-web
+      protocol: TCP
+      port: 80
+      targetPort: 8080
